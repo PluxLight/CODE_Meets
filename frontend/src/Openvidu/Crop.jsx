@@ -61,8 +61,7 @@ function Crop({ image, OCRhandler, closeHandler }) {
           withCredentials: true,
           proxy: { host: process.env.CLOVA_INVOKE_URL },
         }
-      )
-      // https://282c769uda.apigw.ntruss.com/custom/v1/20467/b8b67c0b1215d9b02d9013f67bec45f7ef32d0b00a3945d5058169d08e3b7e07/general
+    )
       .then((res) => {
         console.log(res);
         let prevText = "";
