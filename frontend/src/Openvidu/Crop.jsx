@@ -41,7 +41,7 @@ function Crop({ image, OCRhandler, closeHandler }) {
     );
     axios
       .post(
-        "20467/b8b67c0b1215d9b02d9013f67bec45f7ef32d0b00a3945d5058169d08e3b7e07/general",
+        process.env.CLOVA_INVOKE_PARAMETER,
         {
           images: [
             {
@@ -56,10 +56,10 @@ function Crop({ image, OCRhandler, closeHandler }) {
         },
         {
           headers: {
-            "X-OCR-SECRET": "b3RteXpOU0NPTG5PQmdKWXNZWlNGQ1pqdmN2cHRXb3k=",
+            "X-OCR-SECRET": process.env.CLOVA_SECRET_KEY,
           },
           withCredentials: true,
-          proxy: { host: "https://282c769uda.apigw.ntruss.com/custom/v1/" },
+          proxy: { host: process.env.CLOVA_INVOKE_URL },
         }
       )
       // https://282c769uda.apigw.ntruss.com/custom/v1/20467/b8b67c0b1215d9b02d9013f67bec45f7ef32d0b00a3945d5058169d08e3b7e07/general
