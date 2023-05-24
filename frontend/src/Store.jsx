@@ -11,7 +11,7 @@ export const user = atom({
 
 export const APIroot = atom({
     key:"APIroot",
-    default: "https://i8d109.p.ssafy.io/api",
+    default: "https://codemeets.aeoragy.com/api",
     effects_UNSTABLE: [persistAtom],
 })
 

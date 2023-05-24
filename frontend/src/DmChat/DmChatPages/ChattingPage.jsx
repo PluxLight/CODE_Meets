@@ -21,7 +21,7 @@ const ChattingPage = (props) => {
   useEffect(() => {
     // prod 환경
     ws.current = new WebSocket(
-      `wss://i8d109.p.ssafy.io/api/chating/${props.room}`
+      `wss://codemeets.aeoragy.com/api/chating/${props.room}`
     );
     // dev 환경
     // ws.current = new WebSocket(`wss://localhost:18081/api/chating/${props.room}`);

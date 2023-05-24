@@ -28,7 +28,7 @@ import {
 //   if (window.screenY > 9000) {
 //     axios({
 //       method: "PUT",
-//       url: "https://i8d109.p.ssafy.io/api/login/logout",
+//       url: "https://codemeets.aeoragy.com/api/login/logout",
 //       headers: {
 //         AccessToken: `${localStorage.getItem("ACCESS_TOKEN")}`,
 //       },
