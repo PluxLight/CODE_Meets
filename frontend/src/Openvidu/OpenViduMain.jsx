@@ -21,7 +21,7 @@ import { TbCapture } from "react-icons/tb";
 import { FiShare } from "react-icons/fi";
 import { IoExitOutline } from "react-icons/io5";
 
-const APPLICATION_SERVER_URL = "https://i8d109.p.ssafy.io/";
+const APPLICATION_SERVER_URL = "https://codemeets.aeoragy.com/";
 
 class OpenViduMain extends Component {
   constructor(props) {
