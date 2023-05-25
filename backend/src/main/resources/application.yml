@@ -1,0 +1,32 @@
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: 'true'
+      force: 'true'
+  profiles:
+    active: prod
+    include: settings
+  # swagger3
+  # http://localhost:8080/swagger-ui/index.html
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+# 1 day
+jwt:
+  refresh-token-validity-in-seconds: '86400000'
+  token-validity-in-seconds: '86400000'
+
+mybatis:
+  type-aliases-package: com.hypeboy.codemeets.model
+  mapper-locations: classpath:mappers/**/*.xml
+
+server:
+  address: 0.0.0.0
+  port: '18081'
+
+# file-path
+file:
+  notice-dir: /notice/
+  images-dir: /images/
