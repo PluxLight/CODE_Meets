@@ -78,7 +78,7 @@
 	</insert>
 	
 	<update id="registUserInfo" parameterType="UserDto">
-	    INSERT INTO `s08p11d109`.`user_info` (user_name, nickname, tel, email, profile_photo, email_public, tel_public, user_pk) 
+	    INSERT INTO `user_info` (user_name, nickname, tel, email, profile_photo, email_public, tel_public, user_pk) 
 	    VALUES(#{userName}, #{nickname}, #{tel}, #{email}, #{profilePhoto}, #{emailPublic}, #{telPublic}, (
 	    SELECT user_pk 
 	    FROM `user`
@@ -262,4 +262,3 @@
 			WHERE user_id = #{userId}));
 	</select>
 </mapper>
-
